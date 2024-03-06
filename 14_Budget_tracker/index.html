@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Budget Tracker</h2>
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹0</h1>
+        <div class="inc-exp-container">
+            <div class="income">
+                <h4>income</h4>
+                <p id="money-plus" class="money-plus">
+                    +₹0
+                </p>
+            </div>
+            <div class="expance">
+                <h4>expense</h4>
+                <p id="money-minus" class="money-minus">
+                    -₹0
+                </p>
+            </div>
+            
+        </div>
+        <h3>Add New Transaction</h3>
+
+        <div id="form">
+            <div class="form-control">
+                <label for="text">description</label>
+                <input id="description" placeholder="enter text" type="text">
+            </div>
+            
+            <div class="form-control">
+                <label for="text">Enter Your Transection</label>
+                <input id="amount" placeholder="enter text" type="number">
+            </div>
+            <button class="btn" onclick="AddTransaction()">Add Transections</button>
+            <div class="history">
+                <h4>History</h4>
+                <ul id="mylist">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
